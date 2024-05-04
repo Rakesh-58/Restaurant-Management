@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.restaurantmanagement.ChangeMenu">
+   <children>
+      <Label layoutX="264.0" layoutY="253.0" text="Enter Item Id:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="369.0" layoutY="250.0" />
+      <Button fx:id="b1" layoutX="374.0" layoutY="372.0" mnemonicParsing="false" onAction="#remove" style="-fx-background-color: ffe134;" text="Remove">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="382.0" layoutY="507.0" mnemonicParsing="false" onAction="#goToChangeMenu" prefHeight="34.0" prefWidth="56.0" style="-fx-background-color: dddddd;" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: ffe134;" text="  BR Restaurant">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

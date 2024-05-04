@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.restaurantmanagement.ViewRes">
+   <children>
+      <Button layoutX="218.0" layoutY="172.0" mnemonicParsing="false" onAction="#refreshTable" style="-fx-background-color: ffe134;" text="Refresh" />
+      <TableView fx:id="tableView" layoutX="218.0" layoutY="214.0" prefHeight="200.0" prefWidth="386.0">
+        <columns>
+          <TableColumn fx:id="namecol" prefWidth="190.0" text="Name" />
+          <TableColumn fx:id="phonecol" prefWidth="100.0" text="Phone" />
+            <TableColumn fx:id="timecol" prefWidth="100.0" text="Time" />
+        </columns>
+      </TableView>
+      <Button layoutX="391.0" layoutY="527.0" mnemonicParsing="false" onAction="#goBackToMain" style="-fx-background-color: ddd;" text="Back" />
+      <Button layoutX="357.0" layoutY="467.0" mnemonicParsing="false" onAction="#clearRes" style="-fx-background-color: ffe134;" text="Clear Reservation" />
+      <Button layoutX="662.0" layoutY="109.0" mnemonicParsing="false" onAction="#loadDate" style="-fx-background-color: ddd;" text="load" />
+      <Label prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: ffe134;" text="  BR Restaurant">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
